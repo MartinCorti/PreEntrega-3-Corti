@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grilla {
+    display: grid;     
+    grid-template-areas:
+        "header  header"
+        "foto    aside "
+        "oferta  aside "
+        "marcas  aside "
+        "footer  footer";
+    grid-template-rows: 1fr 5fr 3fr 2fr 1fr;
+    grid-template-columns: 90% 10%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 10px;
+
+}
+
+header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+section#logo {background-color: rgb(115, 255, 0);
+}
+
+nav {background-color: yellow;
+}
+
+main#foto {
+    grid-area: foto;
+    background-color: #df1ea5c0;
+}
+
+section#oferta {
+    grid-area: oferta;
+    background-color: darkslategray;
+}
+
+section#marcas {
+    grid-area: marcas;
+    background-color: blueviolet;
+}
+
+aside {
+    grid-area: aside;
+    background-color: orange;
+}
+
+footer {
+    grid-area: footer;
+    background-color: red;
+}
+
+
+
+
+
